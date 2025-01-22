@@ -1,83 +1,142 @@
-
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
- background-color: Coral; 
- color: purple
+    font-family: Arial, sans-serif;
+    color: #f8c000; /* Egg yolk yellow */
+    background-color: #2e003e; /* Dark purple */
+    line-height: 1.6;
 }
-h1 {
- color: yellow;
- text-align: center;
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
 }
-h2 {
- color: yellow;
- text-align: center;
+h2, h3, h4 {
+    color: #f8c000;
 }
 p {
- font-family: verdana;
- font-size: 14px;
- text-align: left;
+    color: #ffffff;
 }
-footer{
-line-height: 40px;
-display: flex;
-justify-content: left;
+a {
+    color: #f8c000;
+    text-decoration: none;
 }
-video{
-display: block;
-margin: auto;
+a:hover {
+    color: #ffc61a;
 }
-img{
-border-radius: 50%;
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-bg.jpg'); /* Placeholder for hero image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f8c000;
+    text-align: center;
+    padding: 20px;
 }
-*{box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
-img {vertical-align: middle;}
-/* Slideshow container */
-.slideshow-container {
-max-width: 100px;
-position: relative;
-margin: auto;
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
 }
-/* Caption */
-.text {
-color: #f2f2f2;
-font-size: 15px;
-padding: 8px 12px;
-position: absolute;
-bottom: 8px;
-width: 100%;
-text-align: center;
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
 }
-/* Number text (1/3 etc) */
-.numbertext {
-color: #f2f2f2
-font-size: 12px;
-padding 8px 12px;
-top: 0;
+.hero-btn {
+    background-color: #f8c000;
+    color: #2e003e;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
 }
-/* The dots/bullets/inicators */
-.dot {
-height: 15px;
-width: 15px
-margin: 0 2p;
-background-color: #bbb;
-border-radius: 50%
-display: inline-block;
-transition: background-color 0.6s ease;
+.hero-btn:hover {
+    background-color: #ffc61a;
 }
-.active {
-background-color: #717171;
+
+/* About Page */
+.about-section h2, .about-section h3 {
+    margin-bottom: 20px;
 }
-/* Fading Animation */
-.fade {
-animation-name: fade;
-animation-duration: 1.5s;
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
-@keyframes fade{
-from {opacity: .4}
-to {opacity: 1}
+.team-member {
+    text-align: center;
+    max-width: 300px;
 }
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px){
-.text {font-size: 11px}
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
+
+/* Services Page */
+.service-item {
+    background-color: #3a004d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contact Page */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+}
+.contact-form input[type="submit"] {
+    background-color: #f8c000;
+    color: #2e003e;
+    cursor: pointer;
+    border: none;
+}
+.contact-form input[type="submit"]:hover {
+    background-color: #ffc61a;
+}
+
+/* Header and Footer Styles */
+.header {
+    background-color: #3a004d;
+    color: #f8c000;
+    padding: 20px 0;
+    text-align: center;
+}
+.header .logo {
+    font-size: 1.8em;
+}
+.header .nav a {
+    color: #f8c000;
+    margin: 0 15px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+.header .nav a:hover {
+    color: #ffc61a;
+}
+.footer {
+    background-color: #3a004d;
+    color: #f8c000;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
 
